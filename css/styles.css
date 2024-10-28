@@ -812,11 +812,12 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #404bbf;
 }
-.modal-clos:hover .modal-close-icon,
+.modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
     fill: #ffffff;
     background-color: #404bbf;
@@ -859,7 +860,7 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     fill: #4D5AE5;
 }
 .form-group-checkbox {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 .form-label {
     font-size: 12px;
@@ -883,6 +884,12 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     align-items: center;
     font-size: 12px;
     color: #8e8f99;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+.checkbox-icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .checkbox-box {
@@ -894,6 +901,26 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     align-items: center;
     justify-content: center;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),
+     border 250ms cubic-bezier(0.4,0,0.2,1), 
+     fill 250ms cubic-bezier(0.4,0,0.2,1);
+    fill: transparent;
+}
+.form-textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4,0,0.2,1);
+    border-color: #4D5AE5;
 }
 
 .visually-hidden {
@@ -916,4 +943,11 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
 
 .submit-button:hover {
     background-color: #404bbf;
+}
+.visually-hidden:checked+.checkbox-label .checkbox-box {
+    background-color: var(--checkbox-bg-color, #404bbf);
+    border: none;
+}
+.visually-hidden:checked+.checkbox-label .checkbox-icon {
+    fill: var(--checkbox-icon-color, #F4F4FD);
 }
