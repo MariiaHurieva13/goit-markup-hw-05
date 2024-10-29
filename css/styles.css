@@ -860,7 +860,7 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     fill: #4D5AE5;
 }
 .form-group-checkbox {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 .form-label {
     font-size: 12px;
@@ -939,6 +939,7 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     border: none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
 .submit-button:hover {
@@ -950,4 +951,7 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .visually-hidden:checked+.checkbox-label .checkbox-icon {
     fill: var(--checkbox-icon-color, #F4F4FD);
+}
+.privacy-link {
+    color: #4d4ae5;
 }
