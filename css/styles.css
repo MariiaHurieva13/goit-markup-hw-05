@@ -954,7 +954,12 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
 
 .submit-button:hover {
     background-color: #404bbf;
+    border: none;
 }
+.submit-button:focus {
+        border: initial;
+}
+
 .visually-hidden:checked+.checkbox-label .checkbox-box {
     background-color: var(--checkbox-bg-color, #404bbf);
     border: none;
