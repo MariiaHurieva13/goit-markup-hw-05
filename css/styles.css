@@ -856,8 +856,15 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
 .form-input:focus {
     border-color: #4D5AE5;
 }
-.form-input:focus+ .input-icon {
+.form-input:focus + .input-icon {
     fill: #4D5AE5;
+}
+.input:checked + span {
+    background-color: var(--checkbox-bg-color, #404bbf);
+    border: none;
+}
+.input:checked + span svg {
+    fill: var(--icon-fill-color, #F4F4FD);
 }
 .form-group-checkbox {
     margin-bottom: 24px;
@@ -964,11 +971,18 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
 .form-text {
     margin-bottom: 16px;
 }
-.subscribe-button1:hover {
+.subscribe-button {
+    min-width: 169px;
+    display: block;
+    margin: 0 auto;
+    height: 56px;
+    transition: backround-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.subscribe-button:hover {
     border-style: none;
     cursor: pointer;
     }
 
-.subscribe-button1:focus {
+.subscribe-button:focus {
     border-style: none;
 }
