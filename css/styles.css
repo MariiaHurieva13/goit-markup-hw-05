@@ -972,11 +972,10 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
     margin-bottom: 16px;
 }
 .subscribe-button {
-    min-width: 169px;
-    display: block;
+    min-width: 165px;
+    display: flex;
     margin: 0 auto;
-    height: 56px;
-    transition: backround-color 250ms cubic-bezier(0.4,0,0.2,1);
+    height: 40px;
 }
 .subscribe-button:hover {
     border-style: none;
