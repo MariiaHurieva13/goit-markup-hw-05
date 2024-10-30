@@ -387,6 +387,13 @@ button:focus {
     border-radius: 4px;
     margin-bottom: 8px;
 }
+
+.icon-container:checked {
+    background-color: #404bbf;
+}
+.icon-container:checked+span {
+    border: none;
+}
 .icon-container svg {
     width: 64px;
     height: 64px;
@@ -954,10 +961,10 @@ transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
 
 .submit-button:hover {
     background-color: #404bbf;
-    border: none;
+    border-style: none;
 }
 .submit-button:focus {
-        border: initial;
+        border-style: initial;
 }
 
 .visually-hidden:checked+.checkbox-label .checkbox-box {
